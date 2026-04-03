@@ -1,0 +1,28 @@
+.card {
+  width: 220px;
+  padding: 20px;
+  border: 2px solid #f4a300;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card:hover {
+  background: #f4a300;
+  color: #000;
+  transform: translateY(-5px);
+}
+
+.card:hover p {
+  color: #000;
+}

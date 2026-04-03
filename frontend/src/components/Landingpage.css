@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* Container */
+.landing-container {
+  padding: 20px 40px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Nav Buttons */
+.nav-buttons button {
+  margin-left: 12px;
+  padding: 8px 16px;
+  border: 2px solid #f4a300;
+  background: transparent;
+  color: #f4a300;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background: #f4a300;
+  color: #000;
+}
+
+/* Main Section */
+main {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #f4a300;
+}
+
+/* Paragraph */
+main p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Main Buttons */
+.main-buttons {
+  margin-bottom: 50px;
+}
+
+.main-buttons button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Primary Button */
+.main-buttons button:first-child {
+  background: #f4a300;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-buttons button:first-child:hover {
+  background: #d89200;
+}
+
+/* Secondary Button */
+.main-buttons button:last-child {
+  background: transparent;
+  border: 2px solid #f4a300;
+  color: #f4a300;
+}
+
+.main-buttons button:last-child:hover {
+  background: #f4a300;
+  color: #000;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 220px;
+  padding: 20px;
+  border: 2px solid #f4a300;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Hover Effect */
+.card:hover {
+  background: #f4a300;
+  color: #000;
+  transform: translateY(-5px);
+}
+
+.card:hover p {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

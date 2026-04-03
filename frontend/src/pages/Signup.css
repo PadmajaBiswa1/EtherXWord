@@ -1,0 +1,107 @@
+
+/* ================= signup.css ================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  /* max-width: 520px;   
+  padding: 45px 40px;  */
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #f4a300;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-weight: bold;
+  color: #b8860b;
+  margin-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #d89c00;
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FIX: Proper equal inputs */
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row input {
+  flex: 1;   /* THIS FIXES SMALL INPUT ISSUE */
+}
+
+input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d89c00;
+  outline: none;
+  width: 100%;
+  background: #fff;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+input:focus {
+  border: 1px solid #f4a300;
+  background: #fff;
+  box-shadow: 0 0 0 2px rgba(244, 163, 0, 0.2);
+}
+
+button {
+  background: #f4a300;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #e69500;
+}
+
+.footer {
+  margin-top: 22px;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer span {
+  font-weight: bold;
+  color: #d89c00;
+  cursor: pointer;
+}
